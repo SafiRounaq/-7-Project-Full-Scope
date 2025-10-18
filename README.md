@@ -1,44 +1,36 @@
-Blog App — Next.js + MongoDB
-Project Overview
-The Blog App is a full-stack blogging platform built using Next.js and MongoDB. It allows users to create, read, update, and delete (CRUD) blog posts efficiently. The application uses Next.js 14 for server-side rendering, Mongoose for database management, and Tailwind CSS for a modern and responsive design. Axios handles API communication, while React Toastify provides smooth user notifications, resulting in a functional and polished blogging experience.
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-Setup Instructions
-1. Install Node.js
-If Node.js is not installed, download and install it from the official website:
-https://nodejs.org/en/download
+## Getting Started
 
-2. Open the Project
-1.	Open the project folder (for example, BlogApp) in Visual Studio Code.
-2.	Right-click inside the sidebar and select “Open in Integrated Terminal.”
+First, run the development server:
 
-3. Install Dependencies
-Run the following command in the terminal:
-npm install
-Wait for all dependencies to finish installing.
-
-4. Configure MongoDB Database
-1.	Sign up or log in to your MongoDB provider (for example, MongoDB Atlas).
-2.	Create a new project and build a database.
-3.	Select the M0 (free) tier and choose a preferred region.
-4.	Create a database user with a username and password (avoid using “@” in the password).
-5.	Whitelist the IP address 0.0.0.0/0 to allow public access.
-6.	Click Connect → Drivers → Connection String and copy the URI.
-7.	In the project root, create a file named .env.local and add the following line:
-8.	MONGODB_URI=your_connection_string_here
-9.	In lib/config/db.js, ensure your MongoDB URI uses the correct username and password.
-
-5. Run the App
-Start the development server with:
+```bash
 npm run dev
-When it starts, open your browser and visit:
-http://localhost:3000
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-6. Key Technologies
-•	Next.js 14.0.4
-•	React 18
-•	Mongoose 8.1.0
-•	Axios 1.6.5
-•	Tailwind CSS 3.3.0
-•	React Toastify 10.0.3
-•	ESLint 8 with Next.js plugin
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
